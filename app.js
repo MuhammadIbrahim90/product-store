@@ -1,4 +1,3 @@
-
 const container = document.getElementById("productsContainer");
 
 async function fetchProducts() {
@@ -6,7 +5,6 @@ async function fetchProducts() {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
 
-    // If less than 30, repeat to reach 30
     let products = [];
     while (products.length < 30) {
       products = products.concat(data);
@@ -21,15 +19,12 @@ async function fetchProducts() {
         <div class="product-content">
           <h3 class="product-title">${product.title}</h3>
           <div class="product-price">$${product.price}</div>
-          <button class="buy-btn">Buy Now</button>
+          <button class="buy-btn" onclick="location.href='product.html?id=${product.id}'">Buy Now</button>
         </div>
       `;
       container.appendChild(card);
 
-
-
-
-
+      console.log(product);
       
     });
   } catch (err) {

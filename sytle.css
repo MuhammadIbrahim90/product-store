@@ -64,7 +64,7 @@
 
 .buy-btn {
   padding: 5px;
-  background-color: #007bff;
+  background-color: #38bdf8;
   color: white;
   border: none;
   border-radius: 6px;
@@ -73,7 +73,7 @@
 }
 
 .buy-btn:hover {
-  background-color: #0056b3;
+  background-color: #0ea5e9;
 }
 
 @media (max-width: 600px) {
