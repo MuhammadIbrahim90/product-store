@@ -27,7 +27,6 @@ async function fetchProductDetail() {
       return stars;
     };
 
-
     container.innerHTML = `
       <div class="flex flex-col md:flex-row gap-8">
         <div class="w-full md:w-1/2 flex justify-center">
@@ -62,7 +61,7 @@ async function fetchProductDetail() {
           icon: 'success',
           title: 'Added!',
           text: 'Product added to cart!',
-          confirmButtonColor: '#0ea5e9' 
+          confirmButtonColor: '#0ea5e9' // Sky blue
         });
       } else {
         Swal.fire({
